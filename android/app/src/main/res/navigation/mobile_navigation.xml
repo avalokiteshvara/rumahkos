@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.rumahkos.fragment.KosListFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_kos_list" />
+
+    <fragment
+        android:id="@+id/nav_pemilik_kos"
+        android:name="com.example.rumahkos.fragment.KosListFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_kos_list" />
+
+    <fragment
+        android:id="@+id/nav_pemilik_tagihan"
+        android:name="com.example.rumahkos.fragment.TagihanListFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_tagihan_list" />
+
+    <fragment
+        android:id="@+id/nav_sewa_aktif"
+        android:name="com.example.rumahkos.fragment.SewaAktifFragment"
+        android:label="@string/title_sewa_aktif"
+        tools:layout="@layout/fragment_sewa_list" />
+
+
+    <fragment
+        android:id="@+id/nav_pemilik_mutasi"
+        android:name="com.example.rumahkos.fragment.MutasiDanaFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_mutasidana" />
+
+    <fragment
+        android:id="@+id/nav_pemilik_profil"
+        android:name="com.example.rumahkos.fragment.FormProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_form_profile" />
+
+
+    <fragment
+        android:id="@+id/nav_pemilik_riwayat"
+        android:name="com.example.rumahkos.fragment.RiwayatKosFragment"
+        android:label="Riwayat"
+        tools:layout="@layout/fragment_riwayat_kos" />
+
+
+    <fragment
+        android:id="@+id/nav_penyewa_kos"
+        android:name="com.example.rumahkos.fragment.KosListFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_kos_list" />
+
+    <fragment
+        android:id="@+id/nav_penyewa_tagihan"
+        android:name="com.example.rumahkos.fragment.TagihanListFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_tagihan_list" />
+
+    <fragment
+        android:id="@+id/nav_penyewa_sewa"
+        android:name="com.example.rumahkos.fragment.SewaAktifFragment"
+        android:label="Rumah KOS"
+        tools:layout="@layout/fragment_sewa_list" />
+
+    <fragment
+        android:id="@+id/nav_profil"
+        android:name="com.example.rumahkos.fragment.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_penyewa_riwayat"
+        android:name="com.example.rumahkos.fragment.RiwayatKosFragment"
+        android:label="Riwayat"
+        tools:layout="@layout/fragment_riwayat_kos" />
+
+
+    <fragment
+        android:id="@+id/nav_pemilik_keluar"
+        android:name="com.example.rumahkos.fragment.SignOutFragment"
+        android:label="Keluar"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_penyewa_keluar"
+        android:name="com.example.rumahkos.fragment.SignOutFragment"
+        android:label="Keluar"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.rumahkos.ui.notifikasi.NotifikasiFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.rumahkos.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

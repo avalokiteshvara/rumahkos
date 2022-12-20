@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="6dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/kos_foto"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:paddingTop="0dp"
+            android:src="@drawable/logo"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+
+
+            />
+
+        <RatingBar
+            android:id="@+id/kos_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/browser_actions_title_color"
+            android:progressTint="@color/yellow"
+            android:rating="0"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:stepSize="1.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/kos_tvJenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Jenis KOS"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/main_orange_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Rp.000.000"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Nama KOS"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Alamat kos"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Deskripsi kos"
+
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvFasilitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="Fasilitas kos"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="#304FFE"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kos_tvSisaKamar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="2dp"
+                    android:text="3 Kamar Tersisa"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip">
+
+
+            <Button
+                android:id="@+id/kos_btnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:backgroundTint="#0091EA"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="LOKASI"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/kos_btnDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Detail"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

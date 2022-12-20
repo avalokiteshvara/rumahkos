@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kos_verifikasi_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Akun anda belum di verifikasi !\nData kos anda belum bisa dilihat oleh penyewa\nSilahkan upload Foto dan KTP jika belum"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="19sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/kos_list_empty_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Data tidak ditemukan!"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="19sp"
+            android:visibility="gone"
+            android:textStyle="normal" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/kos_swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kos_recyclerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

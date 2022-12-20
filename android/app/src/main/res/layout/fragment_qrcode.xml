@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imViewQrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/browser_actions_bg_grey"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/formkos_imgViewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@drawable/kos"
+                app:sliderAnimationDuration="600"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="600"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#5A5A5A"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="1"     />
+
+            <ImageView
+                android:id="@+id/formkos_imgViewCamera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/formkos_imgViewFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-40dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_menu_camera"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/formkos_verifikasi_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Akun anda belum di verifikasi !\nData kos anda belum bisa dilihat oleh penyewa\nSilahkan upload Foto dan KTP jika belum"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="19sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Nama Kos"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etNama"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:inputType="textCapCharacters"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Jumlah Kamar"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etJmlKamar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="numberSigned"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Alamat "
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etAlamat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:gravity="top"
+                android:overScrollMode="always"
+                android:padding="5dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Kecamatan"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/formkos_spKecamatan"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:spinnerMode="dropdown"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Kelurahan"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/formkos_spKelurahan"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:spinnerMode="dropdown"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Telephon"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etTelepon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="numberSigned"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Jenis Kos"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/formkos_spJenisKos"
+                style="@android:style/Widget.Spinner.DropDown"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:entries="@array/nama_tipe_kos"
+                android:spinnerMode="dropdown"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Deskripsi"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etDeskripsi"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                android:background="#eeeeee"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:padding="5dp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:singleLine="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Fasilitas"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etFasilitas"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="2"
+				android:gravity="top"
+				android:padding="5dp"
+                android:inputType="textMultiLine"
+                android:background="#eeeeee"
+                android:singleLine="false"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Harga Sewa / Bulan"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/formkos_etHargaSewa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:inputType="numberSigned"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+
+            tools:ignore="RtlSymmetry" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Lokasi"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/formkos_btnLokasi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Lokasi"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+
+            tools:ignore="RtlSymmetry" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:id="@+id/txt_lat_lng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:gravity="center"
+                android:text="{Latitude | Longitude}"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dip">
+
+            <Button
+                android:id="@+id/formkos_btnKembali"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="2"
+                android:backgroundTint="#FF6D00"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Kembali"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/formkos_btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="2"
+                android:backgroundTint="#0091EA"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Simpan"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+

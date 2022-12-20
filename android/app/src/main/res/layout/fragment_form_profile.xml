@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/input_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_imgViewFoto"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="TODO"
+                android:src="@drawable/foto_profile"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp"/>
+
+            <ImageView
+                android:id="@+id/profile_imgViewCamera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/profile_imgViewFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="-40dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_menu_camera"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Nama Lengkap"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etNama"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Alamat "
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etAlamat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="No.Telp"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etTelp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Email"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:focusable="false"
+                android:inputType="none"
+                android:textIsSelectable="false"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="TextFields" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Nama Bank"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etNamaBank"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Nomor Rekening"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etNoRekening"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            android:visibility="visible"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Pemilik Rekening"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etNamaPemilikRekening"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Nomor KTP"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/profile_etKtpNomor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text=""
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text="Foto KTP"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/profile_btnFotoKtp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Upload"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="10dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:text=""
+                android:textSize="15sp"
+                android:textStyle="normal" />
+            <ImageView
+                android:id="@+id/profile_imgViewKtp"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/id_card"
+
+                android:contentDescription="TODO" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dip">
+
+            <Button
+                android:id="@+id/profile_btnKembali"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="2"
+                android:backgroundTint="#FF6D00"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Kembali"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/profile_btnSimpan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="2"
+                android:backgroundTint="#0091EA"
+                android:gravity="center|clip_vertical|center_horizontal|center_vertical"
+                android:text="Simpan"
+                android:textAlignment="center"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+

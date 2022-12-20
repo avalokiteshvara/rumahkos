@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#08588C"
+    android:orientation="vertical"
+    tools:context=".fragment.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/foto_profile"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Profil"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_edit_profil"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="25dp"
+            android:text="@string/title_edit_profile"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_edit" />
+
+
+
+        <Button
+            android:id="@+id/btn_tagihan"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="@string/title_tagihan"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_calendar_today_24" />
+
+        <Button
+            android:id="@+id/btn_mutasi_dana"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="@string/title_mutasi_dana"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+
+            app:icon="@drawable/ic_baseline_calendar_today_24" />
+
+        <Button
+            android:id="@+id/btn_riwayat_sewa"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="@string/title_riwayat_sewa"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_history_24" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:text="@string/title_logout"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_reply_24" />
+    </LinearLayout>
+</LinearLayout>
