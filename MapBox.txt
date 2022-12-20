@@ -1,0 +1,7 @@
+https://docs.mapbox.com/android/maps/overview/#install-the-maps-sdk
+
+Default public token
+pk.eyJ1IjoidHJpYXNmYWhydWRpbiIsImEiOiJja2Z4dHE2YjMwNGt3MnJxcjdtOGRndTZuIn0.6Bg8MhFc9rspkQHEN71mCA
+
+Secret token
+sk.eyJ1IjoidHJpYXNmYWhydWRpbiIsImEiOiJja2Z4enh0MTEwNWtrMnFudmZyNTRmdGc2In0.X093UnqxcdJTgjN-oWZxZw

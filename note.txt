@@ -1,0 +1,14 @@
+index()
+create()
+store()
+show()
+edit()
+update()
+destroy()
+
+=== error code
+
+100 SUCCESS
+
+301 ACTION_DENIED
+302 DATA_NOT_FOUND
